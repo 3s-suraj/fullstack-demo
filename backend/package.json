@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-db": "node ./src/db/create_database.js",
+    "db-migrate": "cd ./src/db && npx sequelize-cli db:migrate",
+    "db-seeds": "cd ./src/db && npx sequelize-cli db:seed:all",
+    "api:start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.10.2",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.2"
+  }
+}
